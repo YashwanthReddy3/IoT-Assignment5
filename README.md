@@ -53,7 +53,8 @@ plt.ylabel('Value')
 plt.grid(True)
 plt.show()
 ```
-![TimeSeries Plot](Graphs/TimeSeriesPlotOfUnitsSold.png)
+![image](https://github.com/YashwanthReddy3/IoT-Assignment5/assets/87443083/d9484c8e-1d17-4c76-95cc-084559c8bd97)
+
 
 ```
 data_v2 = pd.read_csv('Traindata.csv')
@@ -75,7 +76,8 @@ result.plot()
 plt.show()
 ```
 
-![Season and Trend Graphs](Graphs\TrendSeasonalResid.png)
+![image](https://github.com/YashwanthReddy3/IoT-Assignment5/assets/87443083/95c23e1a-854f-49f5-98b6-da6fd772c4dd)
+
 
 From the above image we can see that the data has a Decreasing Trend aswell as Seasonality so we can apply the ***Holt-Winters Exponential Smoothing***
 
@@ -121,7 +123,8 @@ predictions.to_csv('hwes_predictions.csv', index=False)
 
 ```
 
-![Cant Run Holt-Winter](Graphs\CantDoHWSECAUSESEASONALITY.png)
+![image](https://github.com/YashwanthReddy3/IoT-Assignment5/assets/87443083/811634b2-6b54-42ae-aefa-1192406a7f01)
+
 
 As you can see we **cannot run Holt-Winter** as the data has less than two full seasonal cycles so we apply holt winters with seanality component
 
@@ -297,6 +300,7 @@ In the above code we are doing the samething as linear regression but slightly d
 - We iterate through each store's data and prepare the data for XGBoost regression and create a XGBoost Regression Model.
 
 
-![Final Plots Graph](Graphs\FinalPlot.png)
+![image](https://github.com/YashwanthReddy3/IoT-Assignment5/assets/87443083/631fb666-542b-4e58-9fb4-74530eedb279)
+
 
 From the above models, we saw that XGBoost outputs are better. Both the Linear Regression and HWES are producing negative outputs, while Random Forest is producing the exact same value for All products for every week. Hence XGBoost's outputs are varying and better compared to all other models.
